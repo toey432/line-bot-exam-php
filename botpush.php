@@ -13,7 +13,7 @@ $pushID = 'U8f92ffc4e84440385d813d177734bcf9';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello NUN');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hi.');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
